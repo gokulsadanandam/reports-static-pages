@@ -1,0 +1,40 @@
+html,body,.background{
+  height: 100%;
+  width: 100%;
+  margin: 0px!important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background{
+  background-image: url('background-image (1).png');
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.header,.footer{
+  text-align: center;
+  margin: 3rem 5rem;
+  text-transform: uppercase;
+  color:white;
+}
+
+.font-36{
+  font-size: 36px;
+}
+
+.font-24{
+  font-size: 24px;
+}
+
+
+.bottom{
+  bottom:0;
+} 
+.right{
+  right:0;
+}
