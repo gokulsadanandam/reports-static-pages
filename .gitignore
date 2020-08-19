@@ -24,3 +24,6 @@ settings/
 out.pdf
 package
 binary
+
+bin
+binary-windows
