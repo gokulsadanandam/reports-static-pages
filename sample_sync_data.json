@@ -1,0 +1,118 @@
+{
+  "MarksheetRegister" : [
+    {
+      "Subject": "English",
+      "ClassName": "XII",
+      "SectionName": "C",
+      "AssignmentType": "Annual",
+      "AssignmentDate": 1597516200000,
+      "Students": [
+        {
+          "StudentName": "Gokul",
+          "MarkScored": 48
+        },
+        {
+          "StudentName": "Muri",
+          "MarkScored": 78
+        },
+        {
+          "StudentName": "Velu",
+          "MarkScored": 75
+        }
+      ]
+    }
+  ],
+  "Classes" : [
+    {
+      "ClassName": "XII",
+      "SectionName": "C",
+      "Students": [
+        "Gokul",
+        "Muri",
+        "Velu"
+      ]
+    },
+    {
+      "ClassName": "X",
+      "SectionName": "C",
+      "Students": [
+        "Gokul"
+      ]
+    }
+  ],
+  "Exams" : [
+    {
+      "Assignment": "Annual",
+      "MaximumMarks": 100,
+      "MinimumMarks": 0,
+      "AssignmentDate": "2020-08-16T12:53:17.420+05:30"
+    }
+  ],
+  "Subjects" : [
+    {
+      "name": "English",
+      "description": ""
+    },
+    {
+      "name": "Maths",
+      "description": ""
+    }
+  ],
+  "AttendanceRegister" : [
+    {
+      "ClassName": "XII",
+      "SectionName": "C",
+      "Students": [
+        {
+          "StudentName": "Gokul",
+          "Attendance": true
+        },
+        {
+          "StudentName": "Muri",
+          "Attendance": true
+        },
+        {
+          "StudentName": "Velu",
+          "Attendance": true
+        }
+      ],
+      "AttendanceDate": 1597429800000,
+      "isDefault": true
+    },
+    {
+      "ClassName": "X",
+      "SectionName": "C",
+      "Students": [
+        {
+          "StudentName": "Gokul",
+          "Attendance": true
+        }
+      ],
+      "AttendanceDate": 1597516200000,
+      "isDefault": true
+    },
+    {
+      "Students": [
+        {
+          "StudentName": "Gokul",
+          "Attendance": true,
+          "Comments": null
+        },
+        {
+          "StudentName": "Muri",
+          "Attendance": false,
+          "Comments": null
+        },
+        {
+          "StudentName": "Velu",
+          "Attendance": true,
+          "Comments": null
+        }
+      ],
+      "ClassName": "XII",
+      "SectionName": "C",
+      "AttendanceDate": 1597516200000
+    }
+  ],
+  "notes" : []
+}
