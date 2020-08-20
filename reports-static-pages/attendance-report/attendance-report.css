@@ -5,13 +5,6 @@ html,body,.background{
   font-family: 'Montserrat', sans-serif;
 }
 
-.background{
-  background-image: url('');
-  background-origin: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .fixed{
   position: fixed;
 }

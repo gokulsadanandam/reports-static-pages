@@ -22,6 +22,9 @@ var/
 settings/
 
 out.pdf
+out2.pdf
+temp-file-cover.html
+temp-file.html
 package
 binary
 

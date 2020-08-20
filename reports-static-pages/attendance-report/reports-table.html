@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto Slab', serif;
+        }
+        .padding{
+            padding: 1rem;
+        }
+        .container{
+            margin: 1rem;
+            padding: 1rem;
+        }
+        .table{
+            padding: 0.5rem;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 1rem;
+            margin: 8px;
+        }
+        thead > tr{
+            background: #4E54C8;
+            color: white
+        }
+        .mh-100{
+          min-height:100vh!important;
+        }
+        .w-100{
+          width:100%
+        }
+        .flex{
+          display:flex;
+        }
+        .column{
+          flex-direction:column
+        }
+    </style>
+  </head>
+  <body class="padding">
+  	<div class="container flex column">
+    {% for chunks in headerlist %}
+      <div class="mh-100">
+  		<table class="table w-100">
+			<thead>
+				<th>Student Name</th>
+			{% for header in chunks %}
+				<th> {{ header }} </th>		
+			{% endfor %}
+			</thead>
+			<tbody>
+			{% for content in studentlist %}
+				<tr>
+					<td> {{ content }} </td>
+    			{% for dates in chunks %}
+						<th> 
+              {% if contentlist[dates][content] == True %}
+
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM12.5 21.25L6.25 15L8.0125 13.2375L12.5 17.7125L21.9875 8.225L23.75 10L12.5 21.25Z" fill="#47E639"/>
+                </svg>
+              {% else %}
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="15" fill="#F12711"/>
+                  <path d="M20.8334 10.3416L19.6584 9.16663L15.0001 13.825L10.3417 9.16663L9.16675 10.3416L13.8251 15L9.16675 19.6583L10.3417 20.8333L15.0001 16.175L19.6584 20.8333L20.8334 19.6583L16.1751 15L20.8334 10.3416Z" fill="white"/>
+                </svg>
+              {% endif %}
+            </th>		
+		    	{% endfor %}
+				</tr>
+			{% endfor %}
+			</tbody>  					
+  		</table>
+    </div>
+    {% endfor %}
+
+  	</div>
+  </body>
